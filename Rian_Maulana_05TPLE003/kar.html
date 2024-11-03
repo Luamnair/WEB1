@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard | Pemrograman Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
+
+<body data-topbar="light">
+
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="logo-sm" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logoo.jpg" alt="logo-dark" height="20">
+                            </span>
+                        </a>
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="logo-sm-light" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logoo.jpg" alt="logo-light" height="20">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                        <i class="ri-menu-2-line align-middle"></i>
+                    </button>
+                </div>
+
+                <!-- Profile section moved to the right -->
+                <div class="d-flex ms-auto">
+                    <div class="dropdown d-inline-block user-dropdown">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/foto.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1">Rian Maulana</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> My Wallet</a>
+                            <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle me-1"></i> Lock screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Left Sidebar Start -->
+        <div class="vertical-menu">
+            <div data-simplebar class="h-100">
+                <div class="user-profile text-center mt-3">
+                    <div>
+                        <img src="assets/images/users/foto.jpg" alt="" class="avatar-md rounded-circle">
+                    </div>
+                    <div class="mt-3">
+                        <h4 class="font-size-16 mb-1">Welcome, Rian Maulana</h4>
+                        <span class="text-muted"><i "></i> Administrator</span>
+                    </div>
+                </div>
+
+                <div id="sidebar-menu">
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="ri-home-3-line"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu-title">Menu Karyawan</li>
+                        <li><a href="kar.html" class="waves-effect"><i class="dripicons-user-group"></i><span>Karyawan</span></a></li>
+                        <li><a href="jab.html" class="waves-effect"><i class="dripicons-user-id"></i><span>Jabatan</span></a></li>
+                        <li><a href="div.html" class="waves-effect"><i class="dripicons-user-id"></i><span>Divisi</span></a></li>
+                        <li class="menu-title">Menu Absensi</li>
+                        <li><a href="abs.html" class="waves-effect"><i class="fas fa-calendar-check"></i><span>Absensi</span></a></li>
+                        <li><a href="izi.html" class="waves-effect"><i class="fas fa-calendar-minus"></i><span>Izin</span></a></li>
+                        <li><a href="lem.html" class="waves-effect"><i class="far fa-clock"></i><span>Lembur</span></a></li>
+                        <li class="menu-title">Menu Penggajian</li>
+                        <li><a href="###" class="waves-effect"><i class="fas fa-dollar-sign"></i><span>Slip Gaji</span></a></li>
+                        <li><a href="###" class="waves-effect"><i class="fas fa-print"></i><span>Cetak Slip Gaji</span></a></li>
+                        <li class="menu-title">Menu Laporan</li>
+                        <li><a href="###" class="waves-effect"><i class="fas fa-print"></i><span>Cetak Laporan</span></a></li>
+                        <li class="menu-title">Menu Admin</li>
+                        <li><a href="###" class="waves-effect"><i class="dripicons-user-group"></i><span>Pengguna</span></a></li>
+                        <button class="btn btn-primary btn-sm">Logout</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- Dashboard Table -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Data Karyawan</h4>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th>Kode</th>
+                                                    <th>Nama</th>
+                                                    <th>Email</th>
+                                                    <th>Alamat</th>
+                                                    <th>Jabatan</th>
+                                                    <th>Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>K001</td>
+                                                    <td>Yovan Fiqri</td>
+                                                    <td>yf@gmail.com</td>
+                                                    <td>Jl. Percetakan Negara No.45,Gang J,Rt 001/Rw 09 Cempaka Putih</td>
+                                                    <td>Staff</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>K002</td>
+                                                    <td>Renate Nindya</td>
+                                                    <td>rennindyaa@gmail.com</td>
+                                                    <td>Solo</td>
+                                                    <td>Kepala Bagian</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>K003</td>
+                                                    <td>Nurachman</td>
+                                                    <td>nurachman@gmail.com</td>
+                                                    <td>Parung</td>
+                                                    <td>Kepala Sub Bagian</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>K004</td>
+                                                    <td>Tatang Sutarman</td>
+                                                    <td>ts@gmail.com</td>
+                                                    <td>Jl. Kimia No.20,Gang J,Rt 005/Rw 04 Cempaka Hitam</td>
+                                                    <td>Staff</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>K005</td>
+                                                    <td>Abdul Jabbar</td>
+                                                    <td>abdjabb@gmail.com</td>
+                                                    <td>Jl. Bogor Raya No.12,Gang J,Rt 002/Rw 07 Bogor</td>
+                                                    <td>Warek 1</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>K006</td>
+                                                    <td>Angga Rakhmansyah</td>
+                                                    <td>rangga@gmail.com</td>
+                                                    <td>Jl. Depok Raya No.22,Gang J,Rt 002/Rw 08 Depok</td>
+                                                    <td>Warek 2</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>K007</td>
+                                                    <td>Bagus Taufik Hidayah</td>
+                                                    <td>bgtaufik@gmail.com</td>
+                                                    <td>Jl. Karawang Raya No.1,Gang J,Rt 001/Rw 09 Karawang</td>
+                                                    <td>Warek 3</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>K008</td>
+                                                    <td>Farriz Raehan</td>
+                                                    <td>fr@gmail.com</td>
+                                                    <td>Jl. Karawaci No.2,Gang J,Rt 001/Rw 01 Karawaci</td>
+                                                    <td>HR</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>K009</td>
+                                                    <td>Achmad Febri</td>
+                                                    <td>achfeb@gmail.com</td>
+                                                    <td>Jl. Depok Raya No.45,Gang J,Rt 001/Rw 09 Depok</td>
+                                                    <td>Manager</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>K010</td>
+                                                    <td>Rian Maulana</td>
+                                                    <td>yf@gmail.com</td>
+                                                    <td>Jl. Pagedangan Raya No.45,Gang J,Rt 001/Rw 09 BSD</td>
+                                                    <td>Admin</td>
+                                                    <td><button class="btn btn-primary btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
